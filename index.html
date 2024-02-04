@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radom password generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>
+        Generate a<br />
+        <span>ramdom password</span>
+      </h1>
+      <div class="display passwordContainer">
+        <input type="text" id="password" placeholder="Password" />
+        <img src="images/copy.png" alt="" onclick="copyPassword()" />
+      </div>
+      <div class="buttonContainer">
+        <button onclick="createPassword()">
+          <img src="images/clean.png" alt="" class="generate" /> Generate
+          Password
+        </button>
+        <button onclick="openModal()">
+          <img src="images/setting.png" alt="" class="generate" /> Settings
+        </button>
+      </div>
+      <!-- Modal -->
+      <div id="myModal">
+        <div>
+          <span onclick="closeModal()" class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
